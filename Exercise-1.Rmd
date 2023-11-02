@@ -22,6 +22,49 @@ multiply_data <- function(data, multiplier = 2) {
 }
 ```
 
+### Description:
+The multiply_data function is designed to multiply data by a specified multiplier. You can easily scale your data by applying a multiplication factor.
+
+### Parameters:
+data: This parameter is mandatory. It should be the data vector or data frame that you want to change in scale.
+multiplier: An optional parameter that specifies the multiplication factor. The default value is 2.
+
+### Usage:
+This will show you how to use the multiply_data function:
+1. Prepare the data that you want to modify with a optional multiplier.
+2. Call the multiply_data function: Input your data and the multiplier. If you don't input the multiplier, it will be a default value 2.
+
+For example: Multiply the my_data vector by 5
+
+```{r echo=TRUE, eval=TRUE} 
+# Prepare a data vector
+example_data <- c(1, 3, 5, 7, 9)
+
+# Multiply the data by 5
+example_result <- multiply_data(example_data, 5)
+
+# Show the result
+example_result
+
+#Or print the result
+print(example_result)
+```
+
+If you don't input the multiplier
+```{r echo=TRUE, eval=TRUE} 
+# Prepare a data vector
+example_data <- c(1, 2, 3, 4, 5)
+
+# Multiply the data by default
+example_result1 <- multiply_data(example_data)
+
+# Show the result
+example_result1
+
+#Or print the result
+print(example_result1)
+```
+
 ## Appendix: All code in this assignment
 
 ```{r ref.label=knitr::all_labels(), echo=TRUE, eval=FALSE} 
