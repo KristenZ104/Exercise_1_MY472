@@ -15,9 +15,9 @@ knitr::opts_chunk$set(echo = FALSE) # actually set the global chunk options.
 ```
 
 ```{r ex1}
-#Define a function that can double the data
-double_data <- function(data) {
-  result <- data * 2
+#Define a function that can multiply the data
+multiply_data <- function(data, multiplier = 2) {
+  result <- data * multiplier
   return(result)
 }
 ```
