@@ -1,7 +1,7 @@
 ---
-title: "Assignment Template"
-author: "Dr Thomas Robinson and Dr Dan de Kadt"
-date: "AT 2023"
+title: "Exercise 1"
+author: "202341436"
+date: "November 2 2023"
 output: html_document
 ---
 
@@ -15,11 +15,54 @@ knitr::opts_chunk$set(echo = FALSE) # actually set the global chunk options.
 ```
 
 ```{r ex1}
-#Define a function that can double the data
-double_data <- function(data) {
-  result <- data * 2
+#Define a function that can multiply the data
+multiply_data <- function(data, multiplier = 2) {
+  result <- data * multiplier
   return(result)
 }
+```
+
+### Description:
+The multiply_data function is designed to multiply data by a specified multiplier. You can easily scale your data by applying a multiplication factor.
+
+### Parameters:
+data: This parameter is mandatory. It should be the data vector or data frame that you want to change in scale.
+multiplier: An optional parameter that specifies the multiplication factor. The default value is 2.
+
+### Usage:
+This will show you how to use the multiply_data function:
+1. Prepare the data that you want to modify with a optional multiplier.
+2. Call the multiply_data function: Input your data and the multiplier. If you don't input the multiplier, it will be a default value 2.
+
+For example: Multiply the my_data vector by 5
+
+```{r echo=TRUE, eval=TRUE} 
+# Prepare a data vector
+example_data <- c(1, 3, 5, 7, 9)
+
+# Multiply the data by 5
+example_result <- multiply_data(example_data, 5)
+
+# Show the result
+example_result
+
+#Or print the result
+print(example_result)
+```
+
+If you don't input the multiplier
+```{r echo=TRUE, eval=TRUE} 
+# Prepare a data vector
+example_data <- c(1, 2, 3, 4, 5)
+
+# Multiply the data by default
+example_result1 <- multiply_data(example_data)
+
+# Show the result
+example_result1
+
+#Or print the result
+print(example_result1)
 ```
 
 ## Appendix: All code in this assignment
